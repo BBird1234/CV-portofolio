@@ -106,4 +106,34 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-} 
+} hr{
+    border-style: dotted none none none;
+    border-color: #37474f;
+    border-width: 7px;
+    width: 7%;
+
+}
+.btn:link, .btn:visited {
+    background-color: #4a9eff;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+background-color: #2979ff;
+transform: translateY(-2px);
+}
+
+a:hover{
+color: #4a9eff;
+}
+
+.footer-link {
+color: #90caf9;
+text-decoration: none;
+}
+
