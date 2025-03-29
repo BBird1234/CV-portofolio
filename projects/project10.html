@@ -29,18 +29,18 @@
 
         <section class="project-views">
             <div class="view-tabs">
-                <button class="tab-button active" data-view="plan">Plan View</button>
+                <button class="tab-button" data-view="plan">Isometric View</button>
                 <button class="tab-button" data-view="front">Front View</button>
                 <button class="tab-button" data-view="side">Side View</button>
-                <button class="tab-button" data-view="end">End View</button>
-                <button class="tab-button" data-view="3d">3D View</button>
+                <button class="tab-button" data-view="end">Plan View</button>
+                <button class="tab-button active" data-view="3d">3D View</button>
             </div>
 
             <div class="view-display">
-                <div class="view-container active" id="plan">
+                <div class="view-container" id="plan">
                     <img src="../images/project10/3d.png" alt="Plan View">
                     <div class="view-description">
-                        <h3>Plan View</h3>
+                        <h3>Isometric View</h3>
                         <p>Description of the plan view and key features visible from this angle.</p>
                     </div>
                 </div>
@@ -61,11 +61,11 @@
                 <div class="view-container" id="end">
                     <img src="../images/project10/mt.PNG" alt="End View">
                     <div class="view-description">
-                        <h3>End View</h3>
+                        <h3> Plan View</h3>
                         <p>Description of the end view and its important elements.</p>
                     </div>
                 </div>
-                <div class="view-container" id="3d">
+                <div class="view-container active" id="3d">
                     <model-viewer
                         src="../models/p10.glb"
                         alt="3D model of the project"

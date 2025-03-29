@@ -29,15 +29,15 @@
 
         <section class="project-views">
             <div class="view-tabs">
-                <button class="tab-button active" data-view="plan">Plan View</button>
+                <button class="tab-button" data-view="plan">Plan View</button>
                 <button class="tab-button" data-view="front">Front View</button>
-                <button class="tab-button" data-view="side">Side View</button>
-                <button class="tab-button" data-view="end">End View</button>
-                <button class="tab-button" data-view="3d">3D View</button>
+                <!-- <button class="tab-button" data-view="side">Side View</button> -->
+                <button class="tab-button" data-view="end">Isometric View</button>
+                <button class="tab-button active" data-view="3d">3D View</button>
             </div>
 
             <div class="view-display">
-                <div class="view-container active" id="plan">
+                <div class="view-container" id="plan">
                     <img src="../images/project7/Part9ss.PNG" alt="Plan View">
                     <div class="view-description">
                         <h3>Plan View</h3>
@@ -51,21 +51,21 @@
                         <p>Description of the front view and its important elements.</p>
                     </div>
                 </div>
-                <div class="view-container" id="side">
+                <!-- <div class="view-container" id="side">
                     <img src="../images/project7/Part93e.JPG" alt="Side View">
                     <div class="view-description">
                         <h3>Side View</h3>
                         <p>Description of the side view and its important elements.</p>
                     </div>
-                </div>
+                </div> -->
                 <div class="view-container" id="end">
-                    <img src="../images/project7/Part9ss.PNG" alt="End View">
+                    <img src="../images/project7/Part93e.JPG" alt="End View">
                     <div class="view-description">
-                        <h3>End View</h3>
+                        <h3>Isometric View</h3>
                         <p>Description of the end view and its important elements.</p>
                     </div>
                 </div>
-                <div class="view-container" id="3d">
+                <div class="view-container active" id="3d">
                     <model-viewer
                         src="../models/Part93e.glb"
                         alt="3D model of the project"
