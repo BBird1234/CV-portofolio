@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CAD Portfolio</title>
+    <title>Kingsley Mensah - CAD Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer@3.4.0/dist/model-viewer.min.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <h1>Kingsley_Mensah_CAD_Portfolio</h1>
+            <div class="logo">Kingsley Mensah</div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -22,54 +23,62 @@
 
     <main>
         <section id="home" class="hero">
-            <h2>Welcome to My CAD Portfolio</h2>
-            <p>Explore my collection of technical drawings and 3D designs</p>
+            <h2>Mechanical Engineer & CAD Designer</h2>
+            <p>Showcasing my collection of precision 3D designs and technical drawings created with Solidworks</p>
+            <a href="#projects" class="btn">View My Work</a>
         </section>
 
-        <section id="gallery" class="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <a href="projects/project1.html">
+        <section id="projects">
+            <h2>My CAD Projects</h2>
+            <div class="carousel-container">
+                <div class="carousel" id="projectCarousel">
+                    <!-- Project 1 -->
+                    <div class="carousel-item">
                         <model-viewer
-                        src="models/3dv.glb"
-                        alt="3D model of the project"
-                        auto-rotate
-                        camera-controls
-                        shadow-intensity="1"
-                        exposure="0.8"
-                        environment-image="neutral"
-                        auto-rotate-delay="0"
-                        rotation-per-second="30deg"
-                        
-                        style="width: 100%; height: 250px; background-color: #f5f5f5;">
-                    </model-viewer>
-                        <h3>Project 1</h3>
-                        <p>Designed with Solidworks</p>
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="projects/project2.html">
+                            src="models/p12.glb"
+                            orientation="0 1 0 35deg" 
+                            alt="3D model of the project"
+                            auto-rotate
+                            camera-controls
+                            shadow-intensity="1"
+                            exposure="0.8"
+                            environment-image="neutral"
+                            auto-rotate-delay="0"
+                            rotation-per-second="30deg">
+                        </model-viewer>
+                        <div class="carousel-content">
+                            <h3>Tank</h3>
+                            <p>Cylindrical Tank with staircase and welded joints</p>
+                            <button class="btn btn-outline view-details" data-project="1">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="carousel-item">
                         <model-viewer
-                        src="models/Part8.glb"
-                        alt="3D model of the project"
-                        auto-rotate
-                        camera-controls
-                        shadow-intensity="1"
-                        exposure="7"
-                        environment-image="neutral"
-                        auto-rotate-delay="0"
-                        rotation-per-second="30deg"
-                        style="width: 100%; height: 250px; background-color: #f5f5f5;">
-                    </model-viewer>
-                    <h3>Project 2</h3>
-                    <p>Designed with Solidworks</p>
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="projects/project3.html">
-                            <model-viewer
-                            src="models/Part14.glb"
+                            src="models/p2.glb"
+                            orientation="0 1 0 90deg" 
+                            alt="3D model of the project"
+                            auto-rotate
+                            camera-controls
+                            shadow-intensity="1"
+                            exposure="0.8"
+                            environment-image="neutral"
+                            auto-rotate-delay="0"
+                            rotation-per-second="30deg">
+                        </model-viewer>
+                        <div class="carousel-content">
+                            <h3>Stand Support</h3>
+                            <p>Stand support with four legs made H-beams</p>
+                            <button class="btn btn-outline view-details" data-project="2">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="carousel-item">
+                        <model-viewer
+                            src="models/p4.glb"
+                            orientation="0 1 0 90deg" 
                             alt="3D model of the project"
                             auto-rotate
                             camera-controls
@@ -77,168 +86,322 @@
                             exposure="0.5"
                             environment-image="neutral"
                             auto-rotate-delay="0"
-                            rotation-per-second="30deg"
-                            style="width: 100%; height: 250px; background-color: #f5f5f5;">
+                            rotation-per-second="30deg">
                         </model-viewer>
-                        <h3>Project 3</h3>
-                        <p>Designed with Solidworks</p>
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="projects/project4.html">
-                            <model-viewer
-                            src="models/Part18.glb"
+                        <div class="carousel-content">
+                            <h3>Platform</h3>
+                            <p>Platform with staircase and handrails</p>
+                            <button class="btn btn-outline view-details" data-project="3">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="carousel-item">
+                        <model-viewer
+                            src="models/p1.glb"
+                            orientation="0 1 0 90deg" 
                             alt="3D model of the project"
                             auto-rotate
                             camera-controls
                             shadow-intensity="1"
-                            exposure="1"
+                            exposure="0.8"
                             environment-image="neutral"
                             auto-rotate-delay="0"
-                            rotation-per-second="30deg"
-                            style="width: 100%; height: 250px; background-color: #f5f5f5;">
+                            rotation-per-second="30deg">
                         </model-viewer>
-                        <h3>Project 4</h3>
-                        <p>Designed with Solidworks</p>
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="projects/project5.html">
-                            <model-viewer
-                            src="models\Part20.glb"
+                        <div class="carousel-content">
+                            <h3>Structural joint</h3>
+                            <p>Structural joint with endplates and gussets</p>
+                            <button class="btn btn-outline view-details" data-project="4">View Details</button>
+                        </div>
+                    </div>
+
+                       <!-- Project 5 -->
+                    <div class="carousel-item">
+                        <model-viewer
+                            src="models/p13.glb"
+                            orientation="0 1 0 90deg" 
                             alt="3D model of the project"
                             auto-rotate
                             camera-controls
                             shadow-intensity="1"
-                            exposure="1"
+                            exposure="0.8"
                             environment-image="neutral"
                             auto-rotate-delay="0"
-                            rotation-per-second="30deg"
-                            style="width: 100%; height: 250px; background-color: #f5f5f5;">
+                            rotation-per-second="30deg">
                         </model-viewer>
-                        <h3>Project 5</h3>
-                        <p>Designed with Solidworks</p>
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="projects/project6.html">
-                            <model-viewer
-                            src="models/Part21f.glb"
+                        <div class="carousel-content">
+                            <h3>Structural Bracket</h3>
+                            <p>Load-bearing structural bracket with optimized design</p>
+                            <button class="btn btn-outline view-details" data-project="5">View Details</button>
+                        </div>
+                    </div>
+
+                       <!-- Project 6 -->
+                    <div class="carousel-item">
+                        <model-viewer
+                            src="models/p6.glb"
+                            orientation="0 1 0 90deg" 
                             alt="3D model of the project"
                             auto-rotate
                             camera-controls
                             shadow-intensity="1"
-                            exposure="1"
+                            exposure="0.8"
                             environment-image="neutral"
                             auto-rotate-delay="0"
-                            rotation-per-second="30deg"
-                            style="width: 100%; height: 250px; background-color: #f5f5f5;">
+                            rotation-per-second="30deg">
                         </model-viewer>
-                        <h3>Project 6</h3>
-                        <p>Designed with Solidworks</p>
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="projects/project7.html">
-                            <model-viewer
-                            src="models/Part93e.glb"
+                        <div class="carousel-content">
+                            <h3>Car Steering Wheel</h3>
+                            <p>Steering Wheel for a vehicle with a knob</p>
+                            <button class="btn btn-outline view-details" data-project="6">View Details</button>
+                        </div>
+                    </div>
+
+                       <!-- Project 7 -->
+                    <div class="carousel-item">
+                        <model-viewer
+                            src="models/p7.glb"
                             alt="3D model of the project"
                             auto-rotate
                             camera-controls
                             shadow-intensity="1"
-                            exposure="1"
+                            exposure="0.8"
                             environment-image="neutral"
                             auto-rotate-delay="0"
-                            rotation-per-second="30deg"
-                            style="width: 100%; height: 250px; background-color: #f5f5f5;">
+                            rotation-per-second="30deg">
                         </model-viewer>
-                        <h3>Project 7</h3>
-                        <p>Designed with Solidworks</p>
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="projects/project8.html">
-                            <model-viewer
-                            src="models\Assem1.glb"
+                        <div class="carousel-content">
+                            <h3>Abstract Skeletal object</h3>
+                            <p>Abstract Skeletal object</p>
+                            <button class="btn btn-outline view-details" data-project="7">View Details</button>
+                        </div>
+                    </div>
+
+                       <!-- Project 8 -->
+                    <div class="carousel-item">
+                        <model-viewer
+                            src="models/p8.glb"
+                            orientation="0 1 0 90deg" 
                             alt="3D model of the project"
                             auto-rotate
                             camera-controls
                             shadow-intensity="1"
-                            exposure="0.7"
+                            exposure="0.8"
                             environment-image="neutral"
                             auto-rotate-delay="0"
-                            rotation-per-second="30deg"
-                            style="width: 100%; height: 250px; background-color: #f5f5f5;">
+                            rotation-per-second="30deg">
                         </model-viewer>
-                        <h3>Project 8</h3>
-                        <p>Designed with Solidworks</p>
-                    </a>
+                        <div class="carousel-content">
+                            <h3>Structural joint</h3>
+                            <p>Structural joint with gusset</p>
+                            <button class="btn btn-outline view-details" data-project="8">View Details</button>
+                        </div>
+                    </div>
+
+                          <!-- Project 9 -->
+                    <div class="carousel-item">
+                        <model-viewer
+                            src="models/p9.glb"
+                            orientation="0 1 0 90deg" 
+                            alt="3D model of the project"
+                            auto-rotate
+                            camera-controls
+                            shadow-intensity="1"
+                            exposure="0.8"
+                            environment-image="neutral"
+                            auto-rotate-delay="0"
+                            rotation-per-second="30deg">
+                        </model-viewer>
+                        <div class="carousel-content">
+                            <h3>Electric Motor</h3>
+                            <p>Electric Motor with fan blades and fins </p>
+                            <button class="btn btn-outline view-details" data-project="9">View Details</button>
+                        </div>
+                    </div>
+
+                          <!-- Project 10 -->
+                    <div class="carousel-item">
+                        <model-viewer
+                            src="models/p10.glb"
+                            orientation="0 1 0 90deg" 
+                            alt="3D model of the project"
+                            auto-rotate
+                            camera-controls
+                            shadow-intensity="1"
+                            exposure="0.8"
+                            environment-image="neutral"
+                            auto-rotate-delay="0"
+                            rotation-per-second="30deg">
+                        </model-viewer>
+                        <div class="carousel-content">
+                            <h3>Computer Mouse</h3>
+                            <p>Computer mouse with ergonomic design</p>
+                            <button class="btn btn-outline view-details" data-project="10">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 11 -->
+                    <div class="carousel-item">
+                        <model-viewer
+                            src="models/p11.glb"
+                            alt="3D model of the project"
+                            auto-rotate
+                            camera-controls
+                            shadow-intensity="1"
+                            exposure="0.8"
+                            environment-image="neutral"
+                            auto-rotate-delay="0"
+                            rotation-per-second="30deg">
+                        </model-viewer>
+                        <div class="carousel-content">
+                            <h3>Structural Stand</h3>
+                            <p>Stand support with two legs made H-beams</p>
+                            <button class="btn btn-outline view-details" data-project="11">View Details</button>
+                        </div>
+                    </div>
+
+                     <!-- Project 12 -->
+                    <div class="carousel-item">
+                        <model-viewer
+                            src="models/p5.glb"
+                            alt="3D model of the project"
+                            auto-rotate
+                            camera-controls
+                            shadow-intensity="1"
+                            exposure="0.8"
+                            environment-image="neutral"
+                            auto-rotate-delay="0"
+                            rotation-per-second="30deg">
+                        </model-viewer>
+                        <div class="carousel-content">
+                            <h3>Structural Stand</h3>
+                            <p>Stand support with two legs made H-beams</p>
+                            <button class="btn btn-outline view-details" data-project="12">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
                 </div>
 
-                <div class="gallery-item">
-                    <a href="projects/project9.html">
-                            <model-viewer
-                            src="models\p9.glb"
-                            alt="3D model of the project"
-                            auto-rotate
-                            camera-controls
-                            shadow-intensity="1"
-                            exposure="0.7"
-                            environment-image="neutral"
-                            auto-rotate-delay="0"
-                            rotation-per-second="30deg"
-                            style="width: 100%; height: 250px; background-color: #f5f5f5;">
-                        </model-viewer>
-                        <h3>Project 9</h3>
-                        <p>Designed with Solidworks</p>
-                    </a>
+               
+                <div class="carousel-nav">
+                    <button class="carousel-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
                 </div>
-                <div class="gallery-item">
-                    <a href="projects/project10.html">
-                            <model-viewer
-                            src="models\p10.glb"
-                            alt="3D model of the project"
-                            auto-rotate
-                            camera-controls
-                            shadow-intensity="1"
-                            exposure="0.7"
-                            environment-image="neutral"
-                            auto-rotate-delay="0"
-                            rotation-per-second="30deg"
-                            style="width: 100%; height: 250px; background-color: #f5f5f5;">
-                        </model-viewer>
-                        <h3>Project 10</h3>
-                        <p>Designed with Solidworks</p>
-                    </a>
+                
+                <div class="carousel-dots" id="carouselDots">
+                    <!-- Dots will be added by JavaScript -->
                 </div>
-
-
             </div>
         </section>
 
         <section id="about">
             <h2>About Me</h2>
-            <p>Innovative Mechanical Engineer, known for productive and efficient task completion. Skilled in computer
-                aided design (CAD), electrical/electronics circuit analysis, and project management. Excel in problem
-                solving, teamwork, and communication, ensuring seamless collaboration on engineering projects. Also, a 
-                seasoned Software Engineer with a solid background in designing, coding, testing, and debugging 
-                software applications. You can contact me via mail(gloking338@gmail.com)</p>
+            <p>Innovative Mechanical Engineer known for productive and efficient task completion. Skilled in computer-aided design (CAD), electrical/electronics circuit analysis, and project management. Excel in problem solving, teamwork, and communication, ensuring seamless collaboration on engineering projects. Also a seasoned Software Engineer with a solid background in designing, coding, testing, and debugging software applications.</p>
+            <div class="center-btn">
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
         </section>
 
-         <section id="contact">
-              <div class="bottom-container">
-
-                <a class="btn" href="mailto:gloking338@gmail.com">CONTACT ME</a>
-        <p class="atsymb">© Kingsley Mensah.</p>
-
-      </div>
-        </section> 
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> gloking338@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalProjectTitle">Project Details</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-model">
+                    <model-viewer
+                        id="modalModelViewer"
+                        auto-rotate
+                        camera-controls
+                        shadow-intensity="1"
+                        exposure="1"
+                        environment-image="neutral"
+                        style="width: 100%; height: 100%;">
+                    </model-viewer>
+                </div>
+                <div class="modal-details">
+                    <div class="views-tabs">
+                        <div class="view-tab active" data-tab="description">Description</div>
+                        <div class="view-tab" data-tab="views">Technical Views</div>
+                        <div class="view-tab" data-tab="specs">Specifications</div>
+                    </div>
+                    
+                    <div class="view-content active" id="descriptionContent">
+                        <p id="projectDescription">Detailed description of the project will appear here.</p>
+                    </div>
+                    
+                    <div class="view-content" id="viewsContent">
+                        <img src="https://via.placeholder.com/800x400?text=Front+View" alt="Front View">
+                        <img src="https://via.placeholder.com/800x400?text=Side+View" alt="Side View">
+                        <img src="https://via.placeholder.com/800x400?text=Top+View" alt="Top View">
+                    </div>
+                    
+                    <div class="view-content" id="specsContent">
+                        <ul class="specs-list">
+                            <li><span>Material:</span> <span id="specMaterial">Steel</span></li>
+                            <li><span>Dimensions:</span> <span id="specDimensions">120mm x 80mm x 45mm</span></li>
+                            <li><span>Weight:</span> <span id="specWeight">0.85kg</span></li>
+                            <li><span>Tolerance:</span> <span id="specTolerance">±0.05mm</span></li>
+                            <li><span>Software:</span> <span id="specSoftware">Solidworks 2023</span></li>
+                            <li><span>Design Time:</span> <span id="specTime">12 hours</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2025 My CAD Portfolio. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">© 2023 Kingsley Mensah. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
